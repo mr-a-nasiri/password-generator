@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Karla&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="CSS/style.css" />
+    <title>Random Password Generator</title>
+  </head>
+  <body>
+    <div id="card">
+      <div id="title-and-theme">
+        <h1 id="title">
+          Generate a <br />
+          <span class="primary-color">Random Password</span>
+        </h1>
+
+        <img
+          id="theme-icon"
+          src="https://www.uplooder.net/img/image/2/addf703a24a12d030968858e0879b11e/moon.svg"
+          alt="ERR"
+        />
+      </div>
+
+      <p id="lead">Never use an insecure password again.</p>
+      <div id="options">
+        <div id="numbers-checkbox">
+          <label for="vehicle1"> Numbers</label><br />
+          <input
+            id="numbers-checkbox-input"
+            type="checkbox"
+            id="vehicle1"
+            name="vehicle1"
+            value="Bike"
+            checked
+          />
+        </div>
+        <div id="symbols-checkbox">
+          <label for="vehicle2"> Symbols</label><br />
+          <input
+            id="symbols-checkbox-input"
+            type="checkbox"
+            id="vehicle2"
+            name="vehicle2"
+            value="Car"
+            checked
+          />
+        </div>
+
+        <div id="input-container">
+          <p>Char Num: &nbsp</p>
+          <input
+            id="number-of-characters"
+            type="number"
+            value="16"
+            max="16"
+            min="8"
+          />
+        </div>
+      </div>
+      <div id="generate-pass-container">
+        <button id="generate-pass" class="btn">Generate passwords</button>
+      </div>
+
+      <div id="break-line"></div>
+      <div id="password-boxes">
+        <div id="box-one">
+          <p id="box-one-content"></p>
+          <p id="copy-img-one">📄</p>
+        </div>
+        <div id="box-two">
+          <p id="box-two-content"></p>
+          <p id="copy-img-two">📄</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="Script/javaScript.js"></script>
+  </body>
+</html>

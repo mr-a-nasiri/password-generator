@@ -1,0 +1,213 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* General Styling */
+body {
+  background: #1c1c1c;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-family: "Karla", sans-serif;
+}
+
+/* Utilites */
+/* .container {
+  padding: 3rem 5rem;
+} */
+
+.primary-color {
+  color: #4adf86;
+  text-shadow: 0px 0px 3px #4adf86;
+}
+
+/* Card */
+#card {
+  height: 80vh;
+  width: 500px;
+  background: #1f2937;
+  padding: 0 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.btn {
+  display: inline-block;
+  padding: 1rem 1rem;
+  width: 12rem;
+  background: #10b981;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-family: inherit;
+  margin-bottom: 2rem;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+#break-line {
+  height: 1px;
+  width: 100%;
+  background: #2f3e53;
+  margin-bottom: 2rem;
+}
+
+/* Title */
+#lead {
+  margin-bottom: 3rem;
+}
+
+/*  */
+
+/* Password Boxes */
+#password-boxes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+#box-one,
+#box-two {
+  width: 12rem;
+  height: 3rem;
+  background: #273549;
+  text-align: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 0 1rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+#copy-img-one,
+#copy-img-two {
+  cursor: pointer;
+}
+#copy-img-one:active,
+#copy-img-two:active {
+  transform: scale(0.95);
+}
+
+/* Generate Pass Container */
+#generate-pass-container {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 0;
+  align-items: baseline;
+}
+
+#input-container {
+  display: flex;
+}
+
+#number-of-characters {
+  text-align: center;
+}
+
+#options {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+#numbers-checkbox,
+#symbols-checkbox {
+  display: flex;
+  gap: 0.25rem;
+}
+
+#title-and-theme {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#theme-icon {
+  padding: 0.5rem;
+  background: rgb(0, 0, 0);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+  #card {
+    height: 100vh;
+    width: 100vw;
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #password-boxes {
+    flex-direction: column;
+    gap: 2rem;
+    align-items: flex-start;
+  }
+
+  #box-one,
+  #box-two {
+    width: 70vw;
+    height: 4rem;
+    background: #273549;
+    text-align: center;
+    border-radius: 5px;
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+  }
+
+  #title-and-theme {
+    flex-direction: column;
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  #title {
+    order: 2;
+    font-size: 300%;
+  }
+
+  #options {
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-bottom: 2rem;
+    gap: 1rem;
+    font-size: 20px;
+  }
+
+  .btn {
+    font-size: 20px;
+    width: 70vw;
+  }
+
+  #box-one-content,
+  #box-two-content {
+    font-size: 16px;
+  }
+
+  #symbols-checkbox-input,
+  #numbers-checkbox-input {
+    width: 2rem;
+  }
+
+  #theme-icon {
+    transform: scale(1.5);
+    margin: 0 0.5rem;
+  }
+}
